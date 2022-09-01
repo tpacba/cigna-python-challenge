@@ -18,7 +18,7 @@ def drop_empty_row(arr):
 results_arr = []
 results_dict = {}
 
-with open("python/data.csv") as csv_file:
+with open("data.csv") as csv_file:
     reader = csv.reader(csv_file)
 
     for row in reader:
