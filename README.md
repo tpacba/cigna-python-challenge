@@ -30,9 +30,9 @@ of output for the following aggregations:
 
 Additionally, generate the following aggregated values:
 
-- The minimum value for all results.
-- The maximum value for all results.
-- The average value for all results.
+- The minimum value for all hostnames.
+- The maximum value for all hostnames.
+- The average value for all hostnames.
 
 Data for your results should be stored in a result format which you can utilize to output your 
 results to STDOUT. Optionally, we'd like for you also to provide formatted output for some of 
@@ -42,9 +42,11 @@ the following options:
 - JSON
 - YAML
 
-These results can be written to external files, for extra credit.
+Then, export your results to a pipe delimited flat .txt file.
 
-You will be allowed full use of the search engine of your choice.
+You will be allowed full use of the search engine of your choice, but not allowed to use Pandas/numPy/equivalent library. 
+We want to see how you accomplish it, not how to library does it for you.
+Also, please put your code in a script that can be easily pulled down an ran locally. 
 
 Good luck!
 
