@@ -38,4 +38,22 @@ with open("python/data.csv") as csv_file:
         results_dict[clean_name(name)] = temp_arr
         i = i + 1
 
-    print(results_dict)
+    min_val_unique_host = {}
+    max_val_unique_host = {}
+    avg_val_unique_host = {}
+
+    for host_key in results_dict:
+        min_val_unique_host[host_key] = min(results_dict[host_key])
+        max_val_unique_host[host_key] = max(results_dict[host_key])
+        avg_val_unique_host[host_key] = round(mean(results_dict[host_key]), 2)
+
+    min_val_all_host = min(min_val_unique_host.values())
+    max_val_all_host = max(max_val_unique_host.values())
+    avg_val_all_host = round(mean(avg_val_unique_host.values()), 2)
+
+    sys.stdout.write("The minimum value for each unique hostname: " + str(min_val_unique_host) + '\n')
+    sys.stdout.write("The maximum value for each unique hostname: " + str(max_val_unique_host) + '\n')
+    sys.stdout.write("The average value for each unique hostname: " + str(avg_val_unique_host) + '\n')
+    sys.stdout.write("The minimum value for all hostnames: " + str(min_val_all_host) + '\n')
+    sys.stdout.write("The maximum value for all hostnames: " + str(max_val_all_host) + '\n')
+    sys.stdout.write("The average value for all hostnames: " + str(avg_val_all_host) + '\n')
