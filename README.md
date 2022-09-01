@@ -45,8 +45,8 @@ the following options:
 Then, export your results to a pipe delimited flat .txt file.
 
 You will be allowed full use of the search engine of your choice, but not allowed to use Pandas/numPy/equivalent library. 
-We want to see how you accomplish it, not how to library does it for you.
-Also, please put your code in a script that can be easily pulled down an ran locally. 
+We want to see how you accomplish it, not how the library does it for you.
+Also, please put your code in a script that can be easily pulled down and ran locally. 
 
 Good luck!
 
